@@ -1,0 +1,262 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  color: #2e3349;
+  background-color: #19a1ae;
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+  background-image: url("../images/bg-pattern-top.svg"), url("../images/bg-pattern-bottom.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: right 50vw bottom 50vh, left 50vw top 50vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .card {
+  position: relative;
+  min-width: 32.6rem;
+  max-height: 37.4rem;
+  background: white;
+  border-radius: 1.5rem;
+  text-align: center;
+  -webkit-box-shadow: 0 5rem 10rem -2rem rgba(8, 70, 94, 0.5048);
+          box-shadow: 0 5rem 10rem -2rem rgba(8, 70, 94, 0.5048);
+  overflow: hidden;
+}
+
+body .card-header {
+  background-image: url("../images/bg-pattern-card.svg");
+  background-size: cover;
+  height: 14rem;
+}
+
+body .card-body {
+  padding: 0 2rem 2.4rem;
+}
+
+body .card-body .img-holder {
+  width: 9.6rem;
+  height: 9.6rem;
+  border-radius: 50%;
+  border: 5px solid white;
+  margin: -4.8rem auto 2.4rem auto;
+  overflow: hidden;
+}
+
+body .card-body .img-holder img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+body .card-body .name-age {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 0.8rem;
+}
+
+body .card-body .name-age .age {
+  font-weight: 400;
+  color: #6b7082;
+}
+
+body .card-body .city {
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: #6b7082;
+}
+
+body .card-footer {
+  border-top: 1px solid rgba(151, 151, 151, 0.4);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 0 1.5rem;
+}
+
+body .card-footer .item {
+  padding: 2.4rem 0;
+}
+
+body .card-footer .item .value {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 0.8rem;
+}
+
+body .card-footer .item .meta {
+  font-size: 1.4rem;
+  font-weight: 400;
+  letter-spacing: 0.15rem;
+  color: #6b7082;
+}
+
+@media (max-width: 320px) {
+  body .card {
+    min-width: 28rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  body .card {
+    min-width: 35rem;
+  }
+}
+/*# sourceMappingURL=main.css.map */

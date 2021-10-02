@@ -1,0 +1,111 @@
+@import "reset";
+@import "config";
+
+body {
+  color: $color-primary-very-dark-desaturated-blue;
+  background-color: $color-primary-dark-cyan;
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+
+  background-image: url("../images/bg-pattern-top.svg"),
+    url("../images/bg-pattern-bottom.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: right 50vw bottom 50vh, left 50vw top 50vh;
+
+  @include flexCenter;
+
+  .card {
+    position: relative;
+    min-width: 32.6rem;
+    max-height: 37.4rem;
+    background: white;
+    border-radius: 1.5rem;
+    text-align: center;
+    box-shadow: 0 5rem 10rem -2rem rgba(8, 70, 94, 0.5048);
+    overflow: hidden;
+
+    &-header {
+      background-image: url("../images/bg-pattern-card.svg");
+      background-size: cover;
+      height: 14rem;
+    }
+
+    &-body {
+      padding: 0 2rem 2.4rem;
+
+      .img-holder {
+        width: 9.6rem;
+        height: 9.6rem;
+        border-radius: 50%;
+        border: 5px solid white;
+        margin: -4.8rem auto 2.4rem auto;
+        overflow: hidden;
+
+        img {
+          width: 100%;
+          height: 100%;
+          display: block;
+        }
+      }
+
+      .name-age {
+        font-size: 1.8rem;
+        font-weight: weight(bold);
+        margin-bottom: 0.8rem;
+
+        .age {
+          font-weight: weight(light);
+          color: $color-primary-dark-grayish-blue;
+        }
+      }
+
+      .city {
+        font-size: 1.4rem;
+        font-weight: weight(light);
+        color: $color-primary-dark-grayish-blue;
+      }
+    }
+
+    &-footer {
+      border-top: 1px solid $color-neutral-dark-gray;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      padding: 0 1.5rem;
+
+      .item {
+        padding: 2.4rem 0;
+
+        .value {
+          font-size: 1.8rem;
+          font-weight: weight(bold);
+          margin-bottom: 0.8rem;
+        }
+
+        .meta {
+          font-size: 1.4rem;
+          font-weight: weight(light);
+          letter-spacing: 0.15rem;
+          color: $color-primary-dark-grayish-blue;
+        }
+      }
+    }
+  }
+}
+
+@include media-small-mobile {
+  body {
+    .card {
+      min-width: 28rem;
+    }
+  }
+}
+
+@include media-desktop {
+  body {
+    .card {
+      min-width: 35rem;
+    }
+  }
+}

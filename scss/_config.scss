@@ -1,0 +1,30 @@
+$color-primary-dark-cyan: #19a1ae;
+$color-primary-very-dark-desaturated-blue: #2e3349;
+$color-primary-dark-grayish-blue: #6b7082;
+$color-neutral-dark-gray: rgba(151, 151, 151, 0.4);
+$font-weight: (
+  "light": 400,
+  "bold": 700,
+);
+
+@function weight($weight-name) {
+  @return map-get($map: $font-weight, $key: $weight-name);
+}
+
+@mixin flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin media-small-mobile {
+  @media (max-width: 320px) {
+    @content;
+  }
+}
+
+@mixin media-desktop {
+  @media screen and (min-width: 992px) {
+    @content;
+  }
+}
